@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Andrew Glover - Career Profile</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles_jobExperience.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div><a href="index.html">Profile </a></div>
+            <div><a href="jobExperience.html">Job Experience </a></div>
+            <div><a href="computingProjects.html">Computing Projects </a></div>
+        </nav> 
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h2>Professional Work & Skills</h2>
+        </div>
+        <div class="job1">
+            <h2>Best Buy</h2>
+        </div>
+        <div class="grid-bestbuy">
+            <div>
+                <p>
+                My position as a Product Process Specialist at Best Buy started in November 2022 and I 
+                am currently working at Best Buy's Bayers Lake location part-time. Working a part-time job
+                here through the end of highschool and the start of universty has been a very valuble expirience 
+                for me. Some of the skills I have learned here are: 
+                </p> 
+
+                <ul>
+                    <li>Managing my school workload effectively so I can meet the availibilty standards of the company 
+                        (part-time employees must be availible 4 evenings a week) </li>
+                    <li>Developing profesionalism skills within the workplace, incuding: 
+                        <ul> 
+                            <li>Interview experience</li>
+                            <li>Teamwork in a working environment</li>
+                            <li>Communicating with supervisers and bosses effectively</li>
+                            <li>Discussing my skills/weaknesses with supervisers</li>
+                            <li>Learning opportunities and methods to move to different and higher roles in a company</li>
+                        </ul> 
+                    </li>
+                    <li>Making connections and strong friendships with co-workers</li>
+                    <li>Learning the process of product shipment, handling, and protection gainst theives</li>
+                    <li>Even helping out customers with building their first computer setup!</li>
+                </ul>
+
+                I have had so many valuble experiences here at Best buy and I appreciate how much the company values
+                friendships within the workplace and making every employee feel comfortable and important.
+            </div>
+            <div>
+            <img height="500px" width="600px" src="BestBuy.webp" alt="Image of Best Buy Bayers Lake">
+            </div>
+        </div>
+        <div id="scroll">
+            <img height="50px" width="50px" src="scroll_icon.png" alt="Scroll for more">
+        </div>
+        <div class="job2">
+            <h2>Goodwood</h2>
+        </div>
+        <div class="grid-goodwood">
+            <div>
+                My first job was at a driving range. It was a local, small business that was a great summer
+                job experience (weather permitting). I highly recommend anyone to visit as its a great place for
+                new or experienced golfers. Friendly owners and community too!
+                <br><br>
+                Their website: <a href="https://www.goodwoodfamilygolf.com/" target="_blank">Goodwood Website Here</a> </td>  
+            </div>
+            <div>
+                <img height="300px" width="500px" src="Goodwood.jpg" alt="Goodwood Driving Range">
+            </div>
+        </div>
+    </main>
+
+    <script src="script_index.js"></script>
+</body>
+<footer>
+    <div class="form-container">
+        <form id="contact-form" action="#">
+            <!-- source: https://in.pinterest.com/pin/illustration-of-mail-icon--678143656365667758/ -->
+            <div class="image-container">
+                <img id="mailIcon" height="40px" width="40px" src="mailIcon.jpg" alt="mail icon">
+            </div>
+
+            <div id="message-panel">
+                Contact Me
+            </div>
+            <div class="input-container">
+                <input type="text" id="firstName" name="firstName" value="First Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="text" id="lastName" name="lastName" value="Last Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" value="Email" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" value="0000000000" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <textarea id="message" name="message" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">Message</textarea>
+            </div>
+            <div class="button-container">
+                <input id="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</footer>
+</html>

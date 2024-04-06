@@ -1,0 +1,222 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background-color: #A6A6A6;
+    padding: 50px;
+}
+
+.navbar{
+    padding: 0;
+    display: flex;
+    border: none;
+    padding: 5px;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 14pt;
+}
+
+.navbar > div {
+    display: inline-block;          
+}
+
+.navbar a:hover{
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    color: #F2F2F2;
+}
+
+#page-title {
+    margin-top: 200px; 
+    margin-left: 50px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #404040;
+}
+
+.color-changer {
+    width: 40px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    border: 4px solid #404040;
+    margin-right: 10px;
+    right: 0%;
+}
+
+.main-grid {
+    display: grid;
+    grid-gap: 50px;;
+    grid-template-areas: 
+        "relevant-coursework"
+        "building-computer" 
+        "personal-projects"
+}
+
+
+#coursework {
+    grid-area: relevant-coursework;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+#pc {
+    grid-area: building-computer;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    box-shadow: 0 10px 20px #404040;
+}
+
+#projects {
+    grid-area: personal-projects;
+    margin-left: 50px;
+    margin-bottom: 183px;
+}
+
+#coursework ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    z-index: 3;
+    background-color: #A6A6A6;
+    padding: 40px;
+    background-color: #A6A6A6;
+    font-weight: bolder;
+    color: black;
+    overflow: visible;
+}
+
+.image-container {
+    vertical-align: top;
+    border: 3px solid #404040;
+    position: absolute; 
+    top: -30px; 
+    left: 5%; 
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 3px; 
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.input-container input {
+    width: 130px;
+}
+
+.button-container {
+    display: inline-block;
+}
+
+#email {
+    width: 200px;
+}
+
+#phoneNumber {
+    width: 100px;
+}
+
+#message {
+    width: 250px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 20px; 
+    }
+    .navbar {
+        font-size: 12pt;
+    }
+    #page-title {
+        margin-top: 100px; 
+        font-size: 17.5pt;
+    }
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    #coursework, #pc, #projects {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #pc {
+        padding-top: 20px;
+        padding-bottom: 100px;
+        padding-right: 20px;
+    }
+    .form-container {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    footer::after {
+        content: "Website designed by Andrew Glover";
+        font-size: 18px;
+        bottom: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px; 
+    }
+    .navbar {
+        font-size: 11pt;
+    }
+    #page-title {
+        margin-top: 100px; 
+        margin-bottom: 40px;
+        font-size: 10pt;
+    }
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    #pc {
+        padding-top: 20px;
+        padding-bottom: 100px;
+        padding-right: 20px;
+    }
+    .form-container {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    footer::after {
+        content: "Website designed by Andrew Glover";
+        font-size: 18px;
+        bottom: 50%;
+    }
+}

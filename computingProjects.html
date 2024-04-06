@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Andrew Glover - Code Samples & Projects</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles_computingProjects.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div><a href="index.html">Profile </a></div>
+            <div><a href="jobExperience.html">Job Experience </a></div>
+            <div><a href="computingProjects.html">Computing Projects </a></div>
+        </nav> 
+    </header>
+
+    <div id="page-title">
+        <h2>Relevant Computer-Based Coursework</h2>
+    </div>
+
+    <main class="main-grid">
+        <div id="coursework">
+            <h4>Completed In Fall Term</h4>
+        <ol>
+            <li>Intro to computer programming (Java + OOP skills)</li>
+            <li>Intro to Computer Systems</li>
+            <li>Practical Data Science</li>
+        </ol>
+        <h4>In Progress (Winter term)</h4>
+        <ol>
+            <li>Intro to Web Design & Development</li>
+            <li>Discrete Mathematics for CS</li>
+            <li>Experimental Robotics</li>
+        </ol>
+        </div>
+        
+        <div id="pc">
+            <h2>Building My first Computer</h2>
+            <p>
+                In the summer of 2022 I built my first PC. I had seen some of my friends get into the hobby 
+                and building the machine we use everyday seemed very exciting. Unfortunately COVID had everyone 
+                stuck in their homes so computers and their parts' prices were inflated. despite the ridiculous 
+                prices I managed to gather some second hand deals and assembled all the parts. For the actual 
+                building process I followed the classic Linus Tech Tips video that everyone seems to watch, and 
+                for good reason! (Watch below!)
+                Overall, This was a very enjoyable experience for me and I recommend it to anyone looking for a 
+                PC or interested in gaming or computers in general. (Watch below!).
+            </p>
+
+            <iframe width="310" height="275" src="https://www.youtube.com/embed/BL4DCEp7blY?si=xDurRXeiEdF0qQyg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <video controls width="310px" height="275px" src="PCvideo.MOV"></video>
+
+        </div>
+        
+        <div id="projects">
+            <h2>Personal Programming Projects</h2> 
+            In Construction! More to come soon with school + personal projects.
+        </div>
+           
+    </main>
+
+    <script src="script_index.js"></script>
+</body>
+<footer>
+    <div class="form-container">
+        <form id="contact-form" action="#">
+            <!-- source: https://in.pinterest.com/pin/illustration-of-mail-icon--678143656365667758/ -->
+            <div class="image-container">
+                <img id="mailIcon" height="40px" width="40px" src="mailIcon.jpg" alt="mail icon">
+            </div>
+
+            <div id="message-panel">
+                Contact Me
+            </div>
+            <div class="input-container">
+                <input type="text" id="firstName" name="firstName" value="First Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="text" id="lastName" name="lastName" value="Last Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" value="Email" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" value="0000000000" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <textarea id="message" name="message" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">Message</textarea>
+            </div>
+            <div class="button-container">
+                <input id="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</footer>
+</body>
+</html>

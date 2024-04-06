@@ -1,0 +1,247 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background-color: #A6A6A6;
+    padding: 50px;
+}
+
+.navbar{
+    padding: 0;
+    display: flex;
+    border: none;
+    padding: 5px;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 14pt;
+}
+
+.navbar > div {
+    display: inline-block;          
+}
+
+.navbar a:hover{
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    color: #F2F2F2;
+}
+
+.page-title {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #404040; 
+}
+
+.job1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    color: #404040; 
+}
+
+.job1 + div{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: auto auto;
+    box-shadow: 0 10px 20px #404040;
+    font-size: 10pt;
+}
+
+div > div {
+    padding: 40px;
+}
+
+.grid-bestbuy > div > img, .grid-goodwood > div > img {
+    border: 8px solid #0D0D0D;
+    border-style: ridge;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #404040;
+    margin: 10px;
+    padding: 0px;
+}
+
+.grid-bestbuy ul {
+    list-style-type: square;
+    padding-left: 20px
+}
+
+#scroll {
+    display: flex;
+    justify-content: center;
+    box-shadow: none; 
+    margin: 80px
+}
+
+.job2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    margin-top: 80px;
+    color: #404040; 
+}
+
+.job2 ~ div{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: auto auto;
+    box-shadow: 0 10px 20px #404040;
+    margin-bottom: 100px;
+}
+
+table {
+    table-layout: auto;
+    border: 8px solid #0D0D0D;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+table::before {
+    content: "My First Job";
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 183px;
+}
+
+a[href="https://www.goodwoodfamilygolf.com/"]:hover {
+    color: green; 
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    z-index: 3;
+    background-color: #A6A6A6;
+    padding: 40px;
+    background-color: #A6A6A6;
+    font-weight: bolder;
+    color: black;
+    overflow: visible;
+}
+
+.image-container {
+    vertical-align: top;
+    border: 3px solid #404040;
+    position: absolute; 
+    top: -30px; 
+    left: 5%; 
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 3px; 
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.input-container input {
+    width: 130px;
+}
+
+.button-container {
+    display: inline-block;
+}
+
+#email {
+    width: 200px;
+}
+
+#phoneNumber {
+    width: 100px;
+}
+
+#message {
+    width: 250px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 20px; 
+    }
+    .navbar {
+        font-size: 12pt;
+    }
+    .page-title {
+        font-size: 17.5pt;
+        margin-top: 100px;
+    }
+    .job1 {
+        margin-top: 0px; 
+    }
+    div > div {
+        padding: 20px;
+    }
+    .grid-bestbuy > div > img, .grid-goodwood > div > img {
+        margin: 10px;
+        max-width: 90%;
+        height: auto;
+    }
+    .form-container {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    footer::after {
+        content: "Website designed by Andrew Glover";
+        font-size: 18px;
+        bottom: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px; 
+    }
+    .navbar {
+        font-size: 11pt;
+    }
+    .page-title {
+        margin-top: 100px;
+    }
+    .job1 {
+        margin-top: 0px; 
+    }
+    div > div {
+        padding: 10px;
+    }
+    .grid-bestbuy > div > img, .grid-goodwood > div > img {
+        margin: 10px;
+        max-width: 90%;
+        height: auto;
+    }
+    .form-container {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    footer::after {
+        content: "Website designed by Andrew Glover";
+        font-size: 18px;
+        bottom: 50%;
+    }
+}

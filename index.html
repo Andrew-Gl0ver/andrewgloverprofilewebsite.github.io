@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Andrew Glover - Career Profile</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles_index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div><a href="index.html">Profile </a></div>
+            <div><a href="jobExperience.html">Job Experience </a></div>
+            <div><a href="computingProjects.html">Computing Projects </a></div>
+        </nav> 
+    </header>
+
+    <div class="contact-menu">
+        <a href="https://www.instagram.com/andrew_20_g" target="blank">
+        <img height="40px" width="40px"src="InstagramLogo.jpg" alt="Instagram link">
+        </a>
+        <a href="https://github.com/Andrew-Gl0ver" target="_blank">
+        <img height="40px" width="40px"src="GitHub_Logo.png" alt="Github link">
+        </a>
+    </div>
+
+    <div class="color-changer">
+        <button id="brown-color-changer">Brown Theme</button>
+        <button id="black-color-changer">Black Theme</button>
+    </div>
+
+    <div id="name">
+        <h1>Andrew Glover</h1>
+    </div>
+
+    <div id="attributes">
+        <h4>Software Engineer - Dal BCS Student - Outdoors Enthusiast</h4>
+    </div>
+
+    <main class="main-photo-area">
+        <img id="benNevis" height="400px" width="300px" src="BenNevis_1170.jpg" alt="Ben Nevis's summit (scotland)">
+        <img id="sunset" height="500px" width="400px" src="Dover_1170.jpg" alt="Dover Island Ocean Sunset">
+        <img id="doverClimb" height="400px" width="300px" src="Climbing_1170.jpg" alt="Climbing on Dover Island with sunset">
+    </main>
+
+    <div id="scroll">
+        <img height="50px" width="50px" src="scroll_icon.png" alt="Scroll for more">
+    </div>
+
+    <div id="student-images">
+        <img height="400px" width="550px" src="DalUni.jpg" alt="Dalhousie University Structure">
+        <img height="500px" width="375px" src="GradPhoto.JPG" alt="Graduation Profile Picture">
+    </div>
+
+    <div class="student-profile">
+        <div><h1>About Me</h1></div>
+        <div><p>Hello! My name is Andrew Glover. I am a student in my first year at Dalhousie University,
+            studying my Bachelors of Computer Science.
+            I am aspiring to be a future Software Engineer with interests that lie in Machine Learning, 
+            Mobile app and Game Development. I also love the outdoors and I have a strong passion for bouldering.
+            Places you might find me are the Dalhousie campus, the bouldering gym in Bayers Lake and exploring
+            new outdoor rock climbing areas around Nova Scotia.
+        </p></div>
+    </div>
+
+    <script src="script_index.js"></script>
+</body>
+
+<footer>
+    <div class="form-container">
+        <form id="contact-form" action="#">
+            <!-- source: https://in.pinterest.com/pin/illustration-of-mail-icon--678143656365667758/ -->
+            <div class="image-container">
+                <img id="mailIcon" height="40px" width="40px" src="mailIcon.jpg" alt="mail icon">
+            </div>
+
+            <div id="message-panel">
+                Contact Me
+            </div>
+            <div class="input-container">
+                <input type="text" id="firstName" name="firstName" value="First Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="text" id="lastName" name="lastName" value="Last Name" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" value="Email" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" value="0000000000" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">
+            </div>
+            <div class="input-container">
+                <textarea id="message" name="message" onfocus="clearDefaultInput(this)" onblur="restoreDefaultInput(this)">Message</textarea>
+            </div>
+            <div class="button-container">
+                <input id="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</footer>
+
+</html>
